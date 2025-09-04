@@ -2,9 +2,9 @@
 #HMS Conf
 exec: node /app/server/server.js
 dbs:
-  - path: /app/data2/kuma.db
+  - path: /app/data/kuma.db
     replicas:
-      - path: /app/data2/db
+      - path: /app/data/db
         snapshot-interval: 12h
 
 #OLDCONF
