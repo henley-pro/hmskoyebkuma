@@ -13,7 +13,7 @@ FROM docker.io/louislam/uptime-kuma as KUMA
 ARG UPTIME_KUMA_PORT=3001
 WORKDIR /app
 RUN mkdir -p /app/data
-RUN mkdir -p /app/backup
+RUN mkdir -p /app/data/backup
 RUN mkdir -p /app/data/db/
 
 COPY --from=BUILDER /litestream /usr/local/bin/litestream
