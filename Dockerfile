@@ -5,7 +5,7 @@ RUN apk add --no-cache curl jq tar
 
 #RUN export LITESTREAM_VERSION=$(curl --silent https://api.github.com/repos/benbjohnson/litestream/releases/latest | jq -r .tag_name) && curl -L https://github.com/benbjohnson/litestream/releases/download/${LITESTREAM_VERSION}/litestream-${LITESTREAM_VERSION}-linux-amd64.tar.gz -o litestream.tar.gz && tar xzvf litestream.tar.gz
 
-RUN curl -L https://github.com/benbjohnson/litestream/releases/download/v0.5.0/litestream-0.5.0-darwin-arm64.tar.gz -o litestream.tar.gz && tar xzvf litestream.tar.gz
+RUN curl -L https://github.com/benbjohnson/litestream/releases/download/v0.3.13/litestream-v0.3.13-darwin-arm64.tar.gz -o litestream.tar.gz && tar xzvf litestream.tar.gz
 
 # Main image
 FROM docker.io/louislam/uptime-kuma as KUMA
